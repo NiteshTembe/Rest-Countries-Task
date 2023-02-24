@@ -1,0 +1,28 @@
+body {
+    background-color: rgb(29, 49, 63)
+}
+.card {
+    background-color: black !important;
+    margin-bottom: 20px;
+    border-radius: 5px !important;
+}
+
+.grad {
+    background-image: linear-gradient(to right, rgb(170, 140, 80),rgb(110, 115, 120));
+    border: none;
+    border-radius: 0;
+  }
+  .card-img-top {
+    height : 250px;
+    width :350px;
+  }
+  .btn {
+    border: 1px solid white;
+  }
+  .card-header {
+    height : 85px
+  }
+
+  #title {
+    color: azure;
+  }
