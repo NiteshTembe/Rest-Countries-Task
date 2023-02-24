@@ -13,8 +13,13 @@ body {
     border-radius: 0;
   }
   .card-img-top {
+    max-height : 250px;
+    max-width :350px;
+  }
+  .card-img {
     height : 250px;
-    width :350px;
+    width :100%;
+    display:flex;
   }
   .btn {
     border: 1px solid white;
