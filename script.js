@@ -12,6 +12,24 @@ rowdiv.classList.add("row")
 rowdiv.id="countrydata"
 container.appendChild(rowdiv)
 document.body.appendChild(container)
+
+document.body.innerHTML += `<div class="modal fade" id="displayWeatherModal" tabindex="-1" aria-labelledby="displayWeatherModalLabel" aria-hidden="true">
+<div class="modal-dialog  modal-dialog-centered modal-sm">
+  <div class="modal-content text-bg-primary">
+    <div class="modal-header">
+      <h1 class="modal-title fs-5 text-center w-100" id="displayWeatherModalLabel"></h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+    <div class="modal-body" id="modalBody">
+      
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-dark" data-bs-dismiss="modal">Close</button>
+    </div>
+  </div>
+</div>
+</div>`
+
 let rowdiv1 = document.getElementById("countrydata")
 async function getCountryData(){
     try{
@@ -31,7 +49,7 @@ function displayCountryData(data){
             console.log(element)
         }
         rowdiv1.innerHTML+=`
-            <div class="col-sm-6 col-md-6 col-lg-4 col-xl-4 mb-4">
+            <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4 mb-4">
             <div class="card h-100 text-center text-bg-dark">
                 <div class="card-header d-inline-flex align-items-center justify-content-center">
                     <h1 class="fs-4">${element.name}</h1>
