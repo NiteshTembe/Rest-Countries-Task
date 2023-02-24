@@ -92,15 +92,15 @@ function displayWeatherData(data){
     const modalBody = document.getElementById("modalBody")
     let displayData =`<h1 class="w-100 text-center">`
     if(data.weather[0].description=="broken clouds") displayData+=`<i class="fa-solid fa-cloud"></i>`
-    else if(data.weather[0].description=="scattered clouds") displayData+=`<i class="fa-regular fa-clouds-sun"></i>`
+    else if(data.weather[0].description=="scattered clouds") displayData+=`<i class="fa-solid fa-cloud-sun"></i>`
     else if(data.weather[0].description=="few clouds") displayData+=`<i class="fa-solid fa-cloud-sun"></i>`
-    else if(data.weather[0].description=="clear sky") displayData+=`<i class="fa-solid fa-sun-bright"></i>`
+    else if(data.weather[0].description=="clear sky") displayData+=`<i class="fa-solid fa-sun"></i>`
     else if(data.weather[0].description=="shower rain") displayData+=`<i class="fa-solid fa-cloud-showers-heavy"></i>`
-    else if(data.weather[0].description=="rain") displayData+=`<i class="fa-solid fa-raindrops"></i>`
+    else if(data.weather[0].description=="rain") displayData+=`<i class="fa-solid fa-cloud-rain"></i>`
     else if(data.weather[0].description=="thunderstorm") displayData+=`<i class="fa-regular fa-cloud-bolt"></i>`
     else if(data.weather[0].description=="snow") displayData+=`<i class="fa-solid fa-snowflake"></i>`
     else if(data.weather[0].description=="mist") displayData+=`<i class="fa-regular fa-cloud-fog"></i>`
-    else displayData+=`<i class="fa-regular fa-cloud-sun-rain"></i>`
+    else displayData+=`<i class="fa-solid fa-cloud-sun-rain"></i>`
      displayData += `</h1>
         <p class="text-center fs-6"><i class="fa-solid fa-temperature-high"></i>Temp : ${data.main.temp}</p>
         <p class="text-center fs-6">Feels Like :${data.main.feels_like}</p>
